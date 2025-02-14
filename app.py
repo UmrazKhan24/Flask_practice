@@ -21,7 +21,7 @@ def aboutus():
     return "<p> We are the Bijaiya team. We are here to help you with your IT needs. </p>"
 
 
-model_pickle = open(r"F:\GitHub\Flask_practice\classifier.pkl", "rb")
+model_pickle = open("classifier.pkl", "rb")
 clf = pickle.load(model_pickle)
 
 # defining the endpoint which will make the prediction
