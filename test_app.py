@@ -11,7 +11,7 @@ def test_home(client):
     """Test the home page"""
     response = client.get("/")
     assert response.status_code == 200
-    assert b"Hello, Bijaiya World!" in response.data
+    assert b"Hello, Bijaiya World!V2" in response.data
 
 
     
